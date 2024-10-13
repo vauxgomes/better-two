@@ -1,13 +1,17 @@
 import { Switch } from '@mantine/core'
 import { useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useSearchParams } from 'react-router-dom'
 
 function App() {
-  let { label1, label2, label3 } = useParams()
-
   const [switches, setSwitches] = useState([false, false, false])
-  const [labels, setLabels] = useState([label1, label2, label3])
   const [count, setCount] = useState(0)
+
+  let [searchParams, setSearchParams] = useSearchParams()
+  const labels = [
+    searchParams.get('l1'),
+    searchParams.get('l2'),
+    searchParams.get('l3')
+  ]
 
   const handleChange = (
     event: React.ChangeEvent<HTMLInputElement>,

@@ -9,7 +9,7 @@ import './index.css' // #242424
 
 const router = createBrowserRouter([
   {
-    path: '/:label1/:label2/:label3',
+    path: '/',
     element: <App />
   }
 ])
