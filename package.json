@@ -2,7 +2,7 @@
   "name": "better-two",
   "private": false,
   "version": "0.0.0",
-  "homepage": "https://vauxgomes.github.io/better-two",
+  "homepage": "https://vauxgomes.github.io/better-two/",
   "type": "module",
   "scripts": {
     "dev": "vite",

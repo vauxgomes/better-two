@@ -37,7 +37,7 @@ function App() {
       {labels.map((label, idx) => (
         <Switch
           key={idx}
-          size="lg"
+          size="xl"
           color="teal"
           checked={switches[idx]}
           onChange={(event) => handleChange(event, idx)}

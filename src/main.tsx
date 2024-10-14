@@ -6,13 +6,18 @@ import App from './App.tsx'
 
 import '@mantine/core/styles.css'
 import './index.css' // #242424
+import ErrorPage from './pages/ErrorPage/index.tsx'
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <App />
-  }
-])
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <App />,
+      errorElement: <ErrorPage />
+    }
+  ],
+  { basename: '/better-two' }
+)
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
