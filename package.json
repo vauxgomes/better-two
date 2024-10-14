@@ -1,13 +1,16 @@
 {
   "name": "better-two",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
+  "homepage": "https://vauxgomes.github.io/better-two",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@mantine/core": "^7.13.2",

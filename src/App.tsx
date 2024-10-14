@@ -6,7 +6,8 @@ function App() {
   const [switches, setSwitches] = useState([false, false, false])
   const [count, setCount] = useState(0)
 
-  let [searchParams, setSearchParams] = useSearchParams()
+  let [searchParams, _setSearchParams] = useSearchParams()
+
   const labels = [
     searchParams.get('l1'),
     searchParams.get('l2'),
